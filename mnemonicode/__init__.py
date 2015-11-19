@@ -123,7 +123,7 @@ def _words_to_block(words):
     try:
         indices = list(word_to_index(word) for word in words)
     except KeyError as e:
-        raise ValueError("word not recognized") from e
+        raise ValueError("word not recognized")
 
     # calculate length of block.
     # both three byte and four byte blocks map to three words but can be
